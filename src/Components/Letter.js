@@ -44,7 +44,7 @@ export default class Letter extends Component {
 
     hide(e){
         this.setState({
-            show_input:false,replayname: "", replay:0
+            show_input:false,replayname: "", replay:0, errors:{}
         })
         var id = document.getElementById("comment");
         id.value="";
@@ -78,6 +78,10 @@ export default class Letter extends Component {
             this.setState({
             show_input:true, replayname:""
             })            
+        }else{
+            this.setState({
+                show_input:true
+            })
         };
 
     }
@@ -99,17 +103,20 @@ export default class Letter extends Component {
         }
         
         comment.commentemail = this.state.commentemail;
-        data.push(comment);
-        this.setState({
-            comments:data, show_input: false
-        })
-        var id = document.getElementById("comment");
-        id.value="";
+        
 
         axios.post('http://localhost:4000/comment', comment,{})
         .then(res => {
+            data.push(comment);
             this.setState({ show_subscribe: true, subscribe_data:res.data.result, replayname: "", replay:0});
-            console.log(res.data)
+            if (res.data.result ==="OK"){
+                this.setState({
+                    comments:data, show_input: false, errors:{}
+                })
+                var id = document.getElementById("comment");
+                id.value="";                
+            }
+
         }).catch(err =>
             this.setState({
                 errors: err.response.data,show_input:true
@@ -124,6 +131,14 @@ export default class Letter extends Component {
                 comments:res.data
             })
         })
+
+        // var id="blog_1";
+        // axios.get('http://localhost:4000/blogs/'+id)
+        // .then(res =>{
+
+        // })
+            
+            
     }
 
     render(){
@@ -147,6 +162,9 @@ export default class Letter extends Component {
                 </Col>
                 <Col>
                     <Col xs="12" sm="10" md="10" lg="7" style={{margin:"auto"}}>
+                        {/* {comments.map((item, index) =>
+                            ds
+                        )} */}
                         <p className="bottom">Apr 8, 2015</p>
 
                         <p className="blog blog_content">I remember sitting down with friends from different NGOs who were working on education programs in villages across Palestine while they told hilarious, yet truly horrifying stories about the ignorance they encountered during their work. Some women they were encountering were having child after child with no notion of how children were conceived except that it involved intercourse, but the details were a mystery. The existence of different contraceptives came as a shock to many and even after extensive counseling on how to use said contraceptives, these women were becoming pregnant because of this same ignorance.</p>
@@ -189,7 +207,7 @@ export default class Letter extends Component {
                                         </InputGroup>                                         
                                   </FormGroup>
                               </Col>
-                              {this.state.show_subscribe?<p style={{margin:"auto"}}>{this.state.subscribe_data}</p>:null}
+                              {this.state.show_subscribe?<p style={{margin:"auto", color:"red"}}>{this.state.subscribe_data}</p>:null}
                              
                           </Row>
 
@@ -254,7 +272,7 @@ export default class Letter extends Component {
                                         <Input type="text" id="comment" size="sm" style={{ width: "100%" }} placeholder="write comment" onClick={this.showinput1} onChange = {this.onChange}></Input>
                                     </InputGroup>
                                 </FormGroup>  
-                                <p style={{margin:"auto"}}>{this.state.errors.comment}</p>
+                                <p className="alert">{this.state.errors.comment}</p>
                                 {this.state.show_input? <>
                                 <Row className="show_input">
                                     <Col xs="12" sm="6">
@@ -263,7 +281,7 @@ export default class Letter extends Component {
                                                 <Input type="text" id="name" size="sm" color="primary" placeholder="name" style={{ width: "100%" }} value = {this.state.name} onChange = {this.onChange}></Input>
                                             </InputGroup>
                                         </FormGroup>
-                                        <p style={{margin:"auto"}}>{this.state.errors.name}</p>
+                                        <p className="alert">{this.state.errors.name}</p>
                                     </Col>
                                     <Col xs="12" sm="6">
                                         <FormGroup>
@@ -271,7 +289,7 @@ export default class Letter extends Component {
                                                 <Input type="text" id="commentemail" size="sm" placeholder="email" color="primary" style={{ width: "100%" }} value = {this.state.commentemail} onChange = {this.onChange}></Input>
                                             </InputGroup>
                                         </FormGroup>
-                                        <p style={{margin:"auto"}}>{this.state.errors.email}</p>
+                                        <p className="alert">{this.state.errors.email}</p>
                                     </Col>
                                 </Row>
 

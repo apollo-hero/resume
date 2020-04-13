@@ -77,7 +77,7 @@ router.post('/comment', (req,res)=>{
     const data = req.body;
     let errors = {};
     if(!Validator.isEmail(data.commentemail)){
-        errors.email="please enter invalid email"
+        errors.email="invalid email"
     } 
     if(isEmpty(data.comment)){
         errors.comment="please enter a comment"
@@ -87,16 +87,17 @@ router.post('/comment', (req,res)=>{
     }
     if(!isEmpty(errors)){
         return res.status(400).json(errors);
+    }else{
+        fs.readFile('blog.json', (err, result) => {
+            if (err) throw err;
+            let sample = JSON.parse(result);
+            sample[0].comments.push(data);
+            sample = JSON.stringify(sample);
+            fs.writeFileSync('blog.json', sample); 
+        });
+        return res.send({result: "OK"})
     }
-    
-    
-    fs.readFile('blog.json', (err, result) => {
-        if (err) throw err;
-        let sample = JSON.parse(result);
-        sample[0].comments.push(data);
-        sample = JSON.stringify(sample);
-        fs.writeFileSync('blog.json', sample); 
-    });
+
 })
 
 router.get("/comment", (req, res) => {

@@ -43,7 +43,7 @@ export default class Blog extends Component {
 
         axios.post('http://localhost:4000/email', data,{})
         .then(res => {
-            if(res.result == "OK"){
+            if(res.data.result == "OK"){
                this.setState({ show: false});  
             }else{
                 this.setState({invalid:res.data.result})
@@ -188,7 +188,7 @@ export default class Blog extends Component {
                                                 <InputGroup>
                                                     <Input type="text" id="email" name="email" placeholder="email" autoComplete="email" value = {this.state.email} onChange = {this.onChange} />
                                                 </InputGroup>
-                                                <p style={{margin:"auto"}}>{this.state.invalid}</p>
+                                                <p className="notification">{this.state.invalid}</p>
                                             </FormGroup>                                            
                                         </Col>
                                         <Col xs="12" sm="4" md="4" lg="4">
@@ -200,7 +200,7 @@ export default class Blog extends Component {
                                         </Row>
                                     </Form1>                                    
                                 </Container>:
-                                <p>You signed up!</p>
+                                <p className="notification">You signed up!</p>
                                 }
 
                                 

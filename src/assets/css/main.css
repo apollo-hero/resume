@@ -232,8 +232,8 @@ html {
         /* Full height */
         height: 100%;
         background-attachment: fixed;
-        padding-top:500px;
-        padding-bottom: 550px;
+        padding-top:30%;
+        padding-bottom: 30%;
         /* Center and scale the image nicely */
         background-position: center;
         background-repeat: no-repeat;
@@ -249,8 +249,8 @@ html {
         /* Full height */
         height: 100%;
         background-attachment: fixed;
-        padding-top:425px;
-        padding-bottom: 325px;
+        padding-top:30%;
+        padding-bottom: 30%;
         /* Center and scale the image nicely */
         background-position: center;
         background-repeat: no-repeat;
@@ -378,4 +378,13 @@ html {
 }
 .mail:hover{
     color:green;
+}
+.notification{
+    color: white;
+    margin:auto;
+}
+.alert{
+    color: red;
+    margin:0px auto;
+    padding:0px;
 }
