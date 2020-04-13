@@ -1,0 +1,381 @@
+img {
+    transition-duration: 0.5s;
+    transition-timing-function: cubic-bezier(0.075, 0.82, 0.165, 1);
+}
+.garrary {
+    -webkit-filter: grayscale(100%);
+}
+.garrary:hover {
+    -webkit-filter: grayscale(0%);
+    transform: scale(1.0757);
+    
+}
+.s-ratio-fill {
+    
+}
+.s-ratio-box {
+    margin: 0 auto;
+    position: relative;
+    max-width: 500px;
+    max-height: 500px;
+}
+em {
+    line-height: 1.45;
+    font-style: italic
+}
+
+.title {
+    text-align: center;
+    color: white;
+}
+
+.title-body {
+    text-align: center;
+    color: black;
+}
+
+.pre-body {
+    font-size: 100%;
+    font-family: "brandon grotesque",brandon,helvetica,sans-serif;
+}
+
+
+@media screen and (max-width:3000px){
+   .pre-body::before, .pre-body::after {
+   background: black;
+   content: "";
+   display: inline-block;
+   height: 2px;
+   margin: 10px 10px;
+   top: 50%;
+   width: 80px;
+   
+   }
+}
+
+
+
+@media screen and (max-width:3000px){ 
+    
+   .art-body::before, .art-body::after {
+    background: black;
+    content: "";
+    display: inline-block;
+    height: 2px;
+    margin: 10px 10px;
+    top: 50%;
+    width: 100px;
+    
+    }
+}
+
+@media screen and (max-width:765px){
+    .art-body::before{
+        display: none;
+    } 
+    
+    .art-body::after {
+    background: black;
+    content: "";
+    display: inline-block;
+    height: 2px;
+    margin: 10px 75px;
+    top: 50%;
+    width: 100px;
+    
+    }
+}
+
+@media screen and (max-width:550px){
+    .pre-body::before{
+        display: none;
+    } 
+    
+    .pre-body::after {
+    background: black;
+    content: "";
+    display: inline-block;
+    height: 2px;
+    margin: 10px 105px;
+    top: 50%;
+    width: 80px;
+    
+    }
+}
+
+
+
+.pre {
+    font-size: 130%;
+}
+@media screen and (max-width:3000px) {
+.pre::before, .pre::after{
+    background: #fff;
+    content: "";
+    display: inline-block;
+    height: 2px;
+    margin: 10px 10px;
+    top: 50%;
+    width: 80px
+    }   
+}
+
+.description::before {
+    background: #5e9516;
+    content: "";
+    display: inline-block;
+    height: 2px;
+    margin: 10px 10px;
+    top: 50%;
+    width: 100px
+}
+
+.description>p {
+    direction: rtl;
+}
+.list-group-item, .list-group-item:hover {
+    background-color: inherit;
+    border: 0px;
+    font-size: 130%;
+    font-weight: 700;
+
+}
+
+.list-group-item>a {
+    color: white
+}
+
+.list-group-item>a:hover {
+    color: #37c
+}
+
+.brain-image {
+    width: 100%;
+    margin-bottom: 30px;
+}
+
+.brain-image:hover {
+    transform: scale(1.075);
+}
+
+.brain-col {
+    overflow: hidden;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+.prev, .next {
+    color: black;
+}
+
+.grallary {
+    justify-content: center;
+}
+.role {
+    color:#5e9516;
+}
+.companyname {
+    font: 24px;
+}
+
+.img-circle {
+    width: 80px;
+    height: 80px;
+}
+
+.img-circle:hover {
+    transform: scale(1.25);
+} 
+
+.nav-button {
+    color: white;
+    margin-right: auto;
+}
+
+@media only screen and (max-width:500px) {
+    .pre::before{
+        display: none;
+    }
+    .pre::after {
+        background: #fff;
+        content: "";
+        display: inline-block;
+        height: 2px;
+        margin: 10px 90px;
+        top: 50%;
+        width: 80px;
+    }
+    .back-to-top {
+        display: none;
+    }
+}
+
+.top-image {
+    /* Full height */
+    height: 100%;
+    background-attachment: fixed;
+    padding-top:330px;
+    padding-bottom: 100px;
+    /* Center and scale the image nicely */
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+    width: 100%;
+    background-image: url(../images/Ashraf.JPEG);
+}
+
+@media screen and (max-width:1024px){
+    .top-image {
+
+        /* Full height */
+        height: 100%;
+        background-attachment: fixed;
+        padding-top:500px;
+        padding-bottom: 550px;
+        /* Center and scale the image nicely */
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: 100% 100%;
+        width: 100%;
+        background-image: url(../images/Ashraf.JPEG);
+    }
+}
+
+@media screen and (max-width:770px){
+    .top-image {
+
+        /* Full height */
+        height: 100%;
+        background-attachment: fixed;
+        padding-top:425px;
+        padding-bottom: 325px;
+        /* Center and scale the image nicely */
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: 100% 100%;
+        width: 100%;
+        background-image: url(../images/Ashraf.JPEG);
+    }
+    .back-to-top {
+        display: none;
+    }
+}
+
+.letter-top {
+    width: 100%;
+    padding-top:30px;
+    background-attachment: fixed;
+    background-image: url(../images/blog_image.jpeg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+    height: 340px;
+    overflow: hidden;
+}
+
+.blog_title{
+    vertical-align: bottom;
+    padding: 40px 0 40px;
+}
+
+@media only screen and (max-width: 727px){
+    .blog_title{
+        padding:30px 0;
+    }
+}
+
+@media only screen and (max-width:489px){
+    .blog_title{
+        padding-top:15px;
+    }
+}
+.bottom{
+    border-bottom: solid 1px;
+    color: #999;
+    margin-bottom: 50px;
+    color: #999;
+    font-size: 14px;
+}
+.subscribe{
+    background:#eee;
+    padding: 20px 20px 0;
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.footer_title{
+    border-top: 1px solid #ddd;
+    color: #999;
+    font-size: 14px;
+    padding: 22px 0;
+}
+.comment{
+    padding-bottom: 150px;
+}
+
+.comments{
+    margin-top:25px;
+    width:100%;
+    list-style:none;
+    padding:0px;
+}
+.comment_unit{
+    display: flex;
+    flex-wrap: wrap;
+    margin-bottom: 15px;
+    vertical-align: top;
+}
+.comment_avatar{
+    height: 30px;
+    margin:4px 15px 0 0;
+    width: 30px;
+}
+.comment_form{
+    margin: 15px 0 0 45px;
+    max-width:750px;
+    position: absolute;
+}
+
+.form_avatar{
+    height: 30px;
+    left:-45px;
+    margin: 4px 15px 0 0;
+    top:-3px;
+    width: 30px;
+    position: absolute;
+}
+.blog_subtitle{
+    line-height: 1.8;
+    padding: 0 40px;
+    font-size: x-large;
+}
+.comment_line{
+    padding: 0px;
+}
+.blog{
+    font-family: roboto, helvetica, sans-serif;
+    line-height: 1.8;
+}
+.a_tag {
+    color:#999 !important; 
+    font-size: 15px;
+}
+.comment_content{
+    font-weight: 700;
+    margin-right: 6px;
+}
+.social_icon{
+    height: 25px;
+    width: 25px;
+}
+.facebook:hover{
+    color:#5961bb;
+}
+.twitter:hover{
+    color:lightskyblue;
+}
+.mail:hover{
+    color:green;
+}

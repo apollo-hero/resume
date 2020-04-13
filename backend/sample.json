@@ -1,0 +1,65 @@
+[
+    {
+        "year": "09/2019 - Present" ,
+        "NAME": "Fanera",
+        "URL" : "https://www.civicsunplugged.org/",
+        "ADRESS": "New York, NY",
+        "ROLE": "Product Management Consultant",
+        "DESCRIPTION": "Civics Unplugged is an intergenerational community committed to empowering courageous young leaders to create the future of American democracy.Our vision is to build a world where Americans across generations and geographies are empowered by their differences and united behind a shared commitment to creating a brighter future for their communities and their democracy.",
+        "photo": "http://localhost:4000/public/fanera.png"   
+    },
+    {
+        "year": "12/2019 - Present" ,
+        "NAME": "Infinity",
+        "URL" : "https://www.civicsunplugged.org/",
+        "ADRESS": "New York, NY",
+        "ROLE": "Business Operations Consultant",
+        "DESCRIPTION": "Civics Unplugged is an intergenerational community committed to empowering courageous young leaders to create the future of American democracy.Our vision is to build a world where Americans across generations and geographies are empowered by their differences and united behind a shared commitment to creating a brighter future for their communities and their democracy.",
+        "photo": "http://localhost:4000/public/3.jpg"   
+    },
+    {
+        "year": "11/2017 - 09/2019" ,
+        "NAME": "B2B Soft",
+        "URL" : "https://www.civicsunplugged.org/",
+        "ADRESS": "New York, NY",
+        "ROLE": "Product Manager",
+        "DESCRIPTION": "Civics Unplugged is an intergenerational community committed to empowering courageous young leaders to create the future of American democracy.Our vision is to build a world where Americans across generations and geographies are empowered by their differences and united behind a shared commitment to creating a brighter future for their communities and their democracy.",
+        "photo": "http://localhost:4000/public/b2bsoft.png"   
+    },
+    {
+        "year": "08/2015 - 09/2019" ,
+        "NAME": "B2B Soft",
+        "URL" : "https://www.civicsunplugged.org/",
+        "ADRESS": "New York, NY",
+        "ROLE": "Sales Engineer",
+        "DESCRIPTION": "Civics Unplugged is an intergenerational community committed to empowering courageous young leaders to create the future of American democracy.Our vision is to build a world where Americans across generations and geographies are empowered by their differences and united behind a shared commitment to creating a brighter future for their communities and their democracy.",
+        "photo": "http://localhost:4000/public/b2bsoft.png"   
+    },
+    {
+        "year": "06/2016 - 11/2017" ,
+        "NAME": "B2B Soft",
+        "URL" : "https://www.civicsunplugged.org/",
+        "ADRESS": "New York, NY",
+        "ROLE": "Product Experience Manager",
+        "DESCRIPTION": "Civics Unplugged is an intergenerational community committed to empowering courageous young leaders to create the future of American democracy.Our vision is to build a world where Americans across generations and geographies are empowered by their differences and united behind a shared commitment to creating a brighter future for their communities and their democracy.",
+        "photo": "http://localhost:4000/public/b2bsoft.png"   
+    },
+    {
+        "year": "02/2012 - 05/2016" ,
+        "NAME": "Karaz",
+        "URL" : "https://www.civicsunplugged.org/",
+        "ADRESS": "New York, NY",
+        "ROLE": "CEO and Founder",
+        "DESCRIPTION": "Civics Unplugged is an intergenerational community committed to empowering courageous young leaders to create the future of American democracy.Our vision is to build a world where Americans across generations and geographies are empowered by their differences and united behind a shared commitment to creating a brighter future for their communities and their democracy.",
+        "photo": "http://localhost:4000/public/karaz_logo.png"   
+    },
+    {
+        "year": "10/2012 - 07/2015" ,
+        "NAME": "Metro by T-Mobile",
+        "URL" : "https://www.civicsunplugged.org/",
+        "ADRESS": "New York, NY",
+        "ROLE": "authorized dealer",
+        "DESCRIPTION": "Civics Unplugged is an intergenerational community committed to empowering courageous young leaders to create the future of American democracy.Our vision is to build a world where Americans across generations and geographies are empowered by their differences and united behind a shared commitment to creating a brighter future for their communities and their democracy.",
+        "photo": "http://localhost:4000/public/metro.png"   
+    }
+] 

@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<FORMULA1>
+    <USER year="Since June 2019">
+        <NAME>Civics Unplugged</NAME>
+        <ADRESS>New York, NY</ADRESS>
+        <ROLE> Co-Founder  COO </ROLE>
+        <DESCRIPTION>
+            Civics Unplugged is an intergenerational community committed to empowering courageous young leaders to create the future of American democracy. 
+            Our vision is to build a world where Americans across generations and geographies are empowered by their differences and united behind a shared commitment to creating a brighter future for their communities and their democracy.
+        </DESCRIPTION>
+    </USER>
+   <USER year="Fall 2015 - May 2019">
+        <NAME>Google Cloud </NAME>
+        <ADRESS>New York, NY</ADRESS>
+        <ROLE> Front-End Software Engineer Tech Lead </ROLE>
+        <DESCRIPTION>My team worked on building amazing user experiences for Google Cloud users. I helped carry out the top-to-bottom redesign and implementation of Cloud Datastore's UI, and then led the front-end team of Google's Cloud SQL product. March 2017, we launched our PostgreSQL offering – which increased Cloud SQL's total addressable market by ~40%. April 2019, we launched our initial SQL Server offering - which is poised to increase Cloud SQL's total addressable market by ~$6B.        </DESCRIPTION>
+    </USER>
+
+    <USER year="earned May 2015">
+        <NAME>Dancing Pineapple</NAME>
+        <ADRESS>Durham, NC</ADRESS>
+        <ROLE> B.S. in Computer Science </ROLE>
+        <DESCRIPTION>
+            Duke presented unprecedented scale and diversity of opportunity. My four years of phenomenal professors across the disciplines pushed me to expand, challenge, and adjust my worldview. My experience dancing with DefMo showed me the power of empathetic leadership and expanded my artistic comfort zone. My tenure throwing major, campus-wide events validated that quality stems from attention to detail. My junior fall semester abroad at London's UCL humbled me to explore my place in the world. My engagement in Duke's tech (and) innovation initiatives exercised my creative muscle, sparked my obsession with design, and strengthened my tolerance to adversity.
+
+            Duke showed me what I love to do, gifted me with a love for learning, and surrounded me with a wealth of inspiring peers.        </DESCRIPTION>
+    </USER>
+
+</FORMULA1>
